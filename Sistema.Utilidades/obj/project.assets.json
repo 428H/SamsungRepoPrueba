@@ -4908,11 +4908,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\Sistema.Utilidades\\Sistema.Utilidades.csproj",
+      "projectUniqueName": "D:\\DIEGO_2\\Videos\\github\\SamsungRepoPrueba\\Sistema.Utilidades\\Sistema.Utilidades.csproj",
       "projectName": "Sistema.Utilidades",
-      "projectPath": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\Sistema.Utilidades\\Sistema.Utilidades.csproj",
+      "projectPath": "D:\\DIEGO_2\\Videos\\github\\SamsungRepoPrueba\\Sistema.Utilidades\\Sistema.Utilidades.csproj",
       "packagesPath": "C:\\Users\\dieho\\.nuget\\packages\\",
-      "outputPath": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\Sistema.Utilidades\\obj\\",
+      "outputPath": "D:\\DIEGO_2\\Videos\\github\\SamsungRepoPrueba\\Sistema.Utilidades\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4933,8 +4933,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\Sistema.Models\\Sistema.Models.csproj": {
-              "projectPath": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\Sistema.Models\\Sistema.Models.csproj"
+            "D:\\DIEGO_2\\Videos\\github\\SamsungRepoPrueba\\Sistema.Models\\Sistema.Models.csproj": {
+              "projectPath": "D:\\DIEGO_2\\Videos\\github\\SamsungRepoPrueba\\Sistema.Models\\Sistema.Models.csproj"
             }
           }
         }

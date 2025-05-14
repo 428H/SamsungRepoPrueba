@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SamsungV1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50bce88be948074815f15602844d9cb3608990e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("SamsungV1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SamsungV1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

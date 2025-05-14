@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sClKYIFK1gM=",
+  "dgSpecHash": "9Y9h44JLYy8=",
   "success": true,
-  "projectFilePath": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\Sistema.AccesoDatos\\Sistema.AccesoDatos.csproj",
+  "projectFilePath": "D:\\DIEGO_2\\Videos\\github\\SamsungRepoPrueba\\Sistema.AccesoDatos\\Sistema.AccesoDatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dieho\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\dieho\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

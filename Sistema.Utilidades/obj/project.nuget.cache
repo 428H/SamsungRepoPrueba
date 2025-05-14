@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9ghmAyiB5qo=",
+  "dgSpecHash": "O/iVYb0iG8M=",
   "success": true,
-  "projectFilePath": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\Sistema.Utilidades\\Sistema.Utilidades.csproj",
+  "projectFilePath": "D:\\DIEGO_2\\Videos\\github\\SamsungRepoPrueba\\Sistema.Utilidades\\Sistema.Utilidades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dieho\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.3.0\\microsoft.aspnetcore.antiforgery.2.3.0.nupkg.sha512",
     "C:\\Users\\dieho\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
