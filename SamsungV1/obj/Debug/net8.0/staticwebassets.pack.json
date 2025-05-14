@@ -1,0 +1,413 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SamsungV1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SamsungV1.fevjx5h19p.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\assets\\demo\\chart-area-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-area-demo.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\assets\\demo\\chart-bar-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-bar-demo.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\assets\\demo\\chart-pie-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-pie-demo.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\assets\\demo\\datatables-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\datatables-demo.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\assets\\img\\error-404-monochrome.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\error-404-monochrome.svg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\css\\facturaPDF.css",
+      "PackagePath": "staticwebassets\\css\\facturaPDF.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\imagenes\\productos\\2c59bb89-b3b3-476a-8cd5-676b54196e90.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\productos\\2c59bb89-b3b3-476a-8cd5-676b54196e90.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\imagenes\\productos\\40f794e4-9cdf-4629-a79b-d1bb0157c4f7.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\productos\\40f794e4-9cdf-4629-a79b-d1bb0157c4f7.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\imagenes\\productos\\43573c3c-2b98-46a4-8324-0273aeb35dd8.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\productos\\43573c3c-2b98-46a4-8324-0273aeb35dd8.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\imagenes\\productos\\5b8e01fe-670b-4bd5-8c8e-0449c3832fae.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\productos\\5b8e01fe-670b-4bd5-8c8e-0449c3832fae.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\imagenes\\productos\\8f2504ad-b015-49e3-ae73-b25bdc3d3c8d.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\productos\\8f2504ad-b015-49e3-ae73-b25bdc3d3c8d.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\imagenes\\productos\\a72fb93c-ce97-435f-b744-29cf0b29b23b.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\productos\\a72fb93c-ce97-435f-b744-29cf0b29b23b.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\imagenes\\productos\\b6875995-72c5-4018-b684-6e8f1736c72e.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\productos\\b6875995-72c5-4018-b684-6e8f1736c72e.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\imagenes\\productos\\bc9ef7ba-8737-4bf3-8a76-643c8dccb657.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\productos\\bc9ef7ba-8737-4bf3-8a76-643c8dccb657.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\imagenes\\productos\\f2395d21-6f29-428e-ba31-70a640a03459.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\productos\\f2395d21-6f29-428e-ba31-70a640a03459.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\imagenes\\productos\\f3fdac82-1e70-418b-86fd-da3a6cd30847.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\productos\\f3fdac82-1e70-418b-86fd-da3a6cd30847.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\img\\6348.jpg",
+      "PackagePath": "staticwebassets\\img\\6348.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\img\\d7a5917d-70a9-4baf-9531-7ed4d81c5421.jpg",
+      "PackagePath": "staticwebassets\\img\\d7a5917d-70a9-4baf-9531-7ed4d81c5421.jpg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\img\\error-404-monochrome.svg",
+      "PackagePath": "staticwebassets\\img\\error-404-monochrome.svg"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\img\\pngwing.com (1).png",
+      "PackagePath": "staticwebassets\\img\\pngwing.com (1).png"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\categoria.js",
+      "PackagePath": "staticwebassets\\js\\categoria.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\cliente.js",
+      "PackagePath": "staticwebassets\\js\\cliente.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\datatables-simple-demo.js",
+      "PackagePath": "staticwebassets\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\factura.js",
+      "PackagePath": "staticwebassets\\js\\factura.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\historialPrecios.js",
+      "PackagePath": "staticwebassets\\js\\historialPrecios.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\metodospago.js",
+      "PackagePath": "staticwebassets\\js\\metodospago.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\movimientos.js",
+      "PackagePath": "staticwebassets\\js\\movimientos.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\productoEspecificacione.js",
+      "PackagePath": "staticwebassets\\js\\productoEspecificacione.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\productos.js",
+      "PackagePath": "staticwebassets\\js\\productos.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\tipoMovimientoIs.js",
+      "PackagePath": "staticwebassets\\js\\tipoMovimientoIs.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\usuario.js",
+      "PackagePath": "staticwebassets\\js\\usuario.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\js\\venta.js",
+      "PackagePath": "staticwebassets\\js\\venta.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\rotativa\\wkhtmltoimage.exe",
+      "PackagePath": "staticwebassets\\rotativa\\wkhtmltoimage.exe"
+    },
+    {
+      "Id": "D:\\DIEGO_2\\Escritorio\\VISUALPRO\\ciclo I 2025\\SamsungV1\\SamsungV1\\wwwroot\\rotativa\\wkhtmltopdf.exe",
+      "PackagePath": "staticwebassets\\rotativa\\wkhtmltopdf.exe"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SamsungV1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SamsungV1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SamsungV1.props",
+      "PackagePath": "build\\SamsungV1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SamsungV1.props",
+      "PackagePath": "buildMultiTargeting\\SamsungV1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SamsungV1.props",
+      "PackagePath": "buildTransitive\\SamsungV1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

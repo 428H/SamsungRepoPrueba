@@ -1,0 +1,92 @@
+﻿@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card shadow-sm">
+                <div class="card-header bg-gradient text-white" style="background-color: #212529;">
+                    <h3 class="text-center mb-0"><i class="fa-solid fa-user-lock me-2"></i>@ViewData["Title"]</h3>
+                </div>
+
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <form id="account" method="post">
+                                <h4 class="mb-3">Acceder con tu cuenta</h4>
+                                <hr />
+                                <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+
+                                <div class="mb-4">
+                                    <label asp-for="Input.Email" class="form-label fw-bold">Email</label>
+                                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="nombre@ejemplo.com" />
+                                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label asp-for="Input.Password" class="form-label fw-bold">Contraseña</label>
+                                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Contraseña" />
+                                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                </div>
+
+                                <div class="checkbox mb-3">
+                                    <label asp-for="Input.RememberMe" class="form-label">
+                                        <input class="form-check-input" asp-for="Input.RememberMe" />
+                                        Recordarme
+                                    </label>
+                                </div>
+
+                                <div class="mb-4">
+                                    <button id="login-submit" type="submit" class="btn btn-primary w-100">
+                                        <i class="fa-solid fa-sign-in-alt me-2"></i>Iniciar Sesión
+                                    </button>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <a id="forgot-password" asp-page="./ForgotPassword" class="mb-2">
+                                        <i class="fa-solid fa-key me-2"></i>¿Olvidaste tu contraseña?
+                                    </a>
+                                    <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">
+                                        <i class="fa-solid fa-envelope me-2"></i>Reenviar email de confirmación
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="card h-100 bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title border-bottom pb-2">
+                                        <i class="fas fa-info-circle text-dark me-2"></i>Acceso al Sistema
+                                    </h5>
+
+                                    <ul class="list-unstyled mt-4">
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-dark me-2"></i>
+                                            Ingresa con tu email y contraseña
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-dark me-2"></i>
+                                            Activa la opción "Recordarme" para facilitar futuros accesos
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-dark me-2"></i>
+                                            Si olvidaste tu contraseña, puedes restablecerla
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

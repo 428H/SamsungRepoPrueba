@@ -1,0 +1,76 @@
+﻿@* @inject SignInManager<IdentityUser> SignInManager
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+<ul class="nav nav-pills flex-column">
+    <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profile</a></li>
+    <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li>
+    <li class="nav-item"><a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">Password</a></li>
+    @if (hasExternalLogins)
+    {
+        <li id="external-logins" class="nav-item"><a id="external-login" class="nav-link @ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins">External logins</a></li>
+    }
+    <li class="nav-item"><a class="nav-link @ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)" id="two-factor" asp-page="./TwoFactorAuthentication">Two-factor authentication</a></li>
+    <li class="nav-item"><a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext)" id="personal-data" asp-page="./PersonalData">Personal data</a></li>
+</ul>
+ *@
+ @* @inject SignInManager<IdentityUser> SignInManager *@
+     @inject SignInManager<Sistema.Models.ApplicationUser> SignInManager
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+
+<div class="card shadow-sm mb-4">
+    <div class="card-header bg-gradient text-white" style="background-color: #212529;">
+        <h5 class="mb-0"><i class="fa-solid fa-user-cog me-2"></i>Gestión de Cuenta</h5>
+    </div>
+    <div class="card-body p-0">
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+                <a class="nav-link rounded-0 border-bottom d-flex align-items-center py-3 px-4 @ManageNavPages.IndexNavClass(ViewContext)"
+                   id="profile" asp-page="./Index">
+                    <i class="fa-solid fa-user me-2"></i>
+                    <span>Perfil</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0 border-bottom d-flex align-items-center py-3 px-4 @ManageNavPages.EmailNavClass(ViewContext)"
+                   id="email" asp-page="./Email">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <span>Email</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0 border-bottom d-flex align-items-center py-3 px-4 @ManageNavPages.ChangePasswordNavClass(ViewContext)"
+                   id="change-password" asp-page="./ChangePassword">
+                    <i class="fa-solid fa-lock me-2"></i>
+                    <span>Contraseña</span>
+                </a>
+            </li>
+            @if (hasExternalLogins)
+            {
+                <li class="nav-item">
+                    <a class="nav-link rounded-0 border-bottom d-flex align-items-center py-3 px-4 @ManageNavPages.ExternalLoginsNavClass(ViewContext)"
+                       id="external-login" asp-page="./ExternalLogins">
+                        <i class="fa-solid fa-globe me-2"></i>
+                        <span>Cuentas externas</span>
+                    </a>
+                </li>
+            }
+            <li class="nav-item">
+                <a class="nav-link rounded-0 border-bottom d-flex align-items-center py-3 px-4 @ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)"
+                   id="two-factor" asp-page="./TwoFactorAuthentication">
+                    <i class="fa-solid fa-shield-alt me-2"></i>
+                    <span>Autenticación de dos factores</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0 d-flex align-items-center py-3 px-4 @ManageNavPages.PersonalDataNavClass(ViewContext)"
+                   id="personal-data" asp-page="./PersonalData">
+                    <i class="fa-solid fa-database me-2"></i>
+                    <span>Datos personales</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

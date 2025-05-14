@@ -1,0 +1,36 @@
+﻿<div class="container mt-4">
+    
+    <div class="card shadow border-0 rounded-3 mb-4">
+        <div class="card-header bg-gradient text-white" style="background-color: #212529;">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h4 class="mb-0"><i class="fa-solid fa-tags me-2"></i>LISTA CATEGORÍAS</h4>
+                    <p class="text-white-50 mb-0 small">Administre las categorías del sistema</p>
+                </div>
+                <div>
+                    <a asp-action="Create" class="text-black bg-body-tertiary btn btn-success">
+                        <i class="fa-solid fa-plus me-1"></i> Crear Categoría
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <table id="tblCategorias" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Estado</th>
+                <th>Fecha</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="~/js/categoria.js"></script>
+}

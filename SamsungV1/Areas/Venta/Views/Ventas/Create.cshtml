@@ -1,0 +1,159 @@
+﻿@model Sistema.Models.ViewModels.VentaVM
+
+@{
+    ViewData["Title"] = "Nueva Venta";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Formulario de Venta -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header bg-gradient text-white" style="background-color: #212529;">
+                    <h4 class="mb-0">Nueva Venta</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <!-- Área de cliente seleccionado -->
+                        <div class="mb-3">
+                            <label class="form-label">Cliente Seleccionado</label>
+                            <div class="input-group">
+                                <input type="text" id="clienteSeleccionado" class="form-control" readonly placeholder="Seleccione un cliente de la tabla" />
+                                <button type="button" class="btn btn-outline-secondary" id="limpiarCliente">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <input asp-for="Venta.Id_cliente" type="hidden" id="clienteID" />
+                            <span asp-validation-for="Venta.Id_cliente" class="text-danger"></span>
+                        </div>
+
+                        <!-- Área de productos seleccionados -->
+                        <div class="mb-3">
+                            <label class="form-label">Productos Seleccionados</label>
+                            <div id="productosSeleccionados" class="border rounded p-2 mb-2" style="min-height: 100px; max-height: 200px; overflow-y: auto;">
+                                <div class="text-center text-muted py-3" id="mensajeProductosVacios">
+                                    No hay productos seleccionados
+                                </div>
+                            </div>
+                            <div id="productosFormulario" style="display:none;">
+                                <!-- Aquí se generarán los campos hidden para enviar al servidor -->
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Venta.Subtotal" class="form-label">Subtotal</label>
+                            <input asp-for="Venta.Subtotal" id="Venta_Subtotal" class="form-control" readonly />
+                            <span asp-validation-for="Venta.Subtotal" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Venta.Total" class="form-label">Total</label>
+                            <input asp-for="Venta.Total" id="Venta_Total" class="form-control" readonly />
+                            <span asp-validation-for="Venta.Total" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Venta.Id_metodo_pago" class="form-label">Método de Pago</label>
+                            <select asp-for="Venta.Id_metodo_pago" asp-items="@Model.MetodosPagoLista" class="form-select">
+                                <option value="">-- Seleccione un Método de Pago --</option>
+                            </select>
+                            <span asp-validation-for="Venta.Id_metodo_pago" class="text-danger"></span>
+                        </div>
+                        <!-- Tipo de Movimiento para la Creación Inicial -->
+                        <div class="mb-3">
+                            <label for="IdTipoMovimientoSeleccionado" class="form-label">Tipo de Movimiento (Salida Inventario)</label>
+                            <select asp-for="IdTipoMovimientoSeleccionado" asp-items="@Model.ListaTiposMovimiento" class="form-select">
+                                <option value="">-- Seleccione un tipo de movimiento --</option>
+                            </select>
+                            <span asp-validation-for="IdTipoMovimientoSeleccionado" class="text-danger"></span>
+                            
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Venta.Notas" class="form-label">Notas</label>
+                            <textarea asp-for="Venta.Notas" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Venta.Notas" class="text-danger"></span>
+                        </div>
+
+                        <input type="hidden" asp-for="Venta.Fecha" />
+                        <input type="hidden" asp-for="Venta.Id_usuario" />
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn btn-secondary">Guardar Venta</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tablas de Productos y Clientes -->
+        <div class="col-md-8">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="productos-tab" data-bs-toggle="tab" data-bs-target="#productos" type="button" role="tab" aria-controls="productos" aria-selected="true">Productos</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="clientes-tab" data-bs-toggle="tab" data-bs-target="#clientes" type="button" role="tab" aria-controls="clientes" aria-selected="false">Clientes</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <!-- Pestaña Productos -->
+                <div class="tab-pane fade show active" id="productos" role="tabpanel" aria-labelledby="productos-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <table id="tblProductos" class="table table-striped table-bordered" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Stock</th>
+                                        <th>Imagen</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña Clientes -->
+                
+                <div class="tab-pane fade" id="clientes" role="tabpanel" aria-labelledby="clientes-tab">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">Lista de Clientes</h5>
+                            <a class="btn btn btn-secondary" asp-area="Venta" asp-controller="Clientes" asp-action="Create">
+                                <i class="fas fa-user-plus me-1"></i> Crear Nuevo Cliente
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <table id="tblClientes" class="table table-striped table-bordered" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>DUI</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Teléfono</th>
+                                        <th>Email</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="~/js/venta.js"></script>
+}

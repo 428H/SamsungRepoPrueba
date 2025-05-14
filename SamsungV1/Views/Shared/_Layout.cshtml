@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>@ViewData["Title"] - Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+    <!--Css todos-->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.5/sweetalert2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="sb-nav-fixed @(User.Identity.IsAuthenticated ? "user-authenticated" : "")">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="/"><img src="~/img/pngwing.com (1).png" alt="Samsung Logo" height="57" class="d-inline-block align-text-top"></a>
+        <!-- Sidebar Toggle-->
+        @if (User.Identity.IsAuthenticated)
+    {
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
+                <i class="fas fa-bars"></i>
+            </button>
+    }
+
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+
+        </form>
+        <!-- Navbar-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <partial name="_LoginPartial" />
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="layoutSidenav">
+        
+            <div id="layoutSidenav_nav">
+
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+
+                    <div class="sb-sidenav-menu">
+
+                        <div class="nav">
+                            <!-- Dashboard -->
+                            <div class="sb-sidenav-menu-heading">Principal</div>
+                            <a class="nav-link" href="/" @*  asp-controller="#" asp-action="#" *@>
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+
+                            <!-- Catálogo y Productos (como dropdown) -->
+                            <div class="sb-sidenav-menu-heading">Catálogo</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCatalogo" aria-expanded="false" aria-controls="collapseCatalogo">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tags"></i></div>
+                                Gestión de Stock
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseCatalogo" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" asp-area="Almacen" asp-controller="Categorias" asp-action="Index">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-folder"></i></div>
+                                        Categorías
+                                    </a>
+                                    <a class="nav-link" asp-area="Almacen" asp-controller="Productos" asp-action="Index">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-boxes"></i></div>
+                                        Productos
+                                    </a>
+                                    <a class="nav-link" asp-area="Almacen" asp-controller="TipoMovimientoIs" asp-action="Index">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-retweet"></i></div>
+                                        Tipos de Movimientos
+                                    </a>
+                                    <a class="nav-link" asp-area="Almacen" asp-controller="Movimientos" asp-action="Index">
+                                        <div class="sb-nav-link-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                                        Movimientos
+                                    </a>
+                                    <a class="nav-link" asp-area="Almacen" asp-controller="HistorialPrecios" asp-action="Index">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-history"></i></div>
+                                        Historial de Precios
+                                    </a>
+                                </nav>
+                            </div>
+
+
+
+                            <!-- Usuarios y Clientes (como dropdown) -->
+                            <div class="sb-sidenav-menu-heading">Gestión de Usuarios</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUsuarios" aria-expanded="false" aria-controls="collapseUsuarios">
+                                <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                                Usuarios y Clientes
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseUsuarios" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-user-plus"></i></div>
+                                        Ingresar Nuevo Usuarios
+                                    </a>
+                                    <a class="nav-link" asp-area="Admin" asp-controller="Usuarios" asp-action="Index">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-user-shield"></i></div>
+                                        Usuarios Sistema
+                                    </a>
+
+
+                                    @* <a class="nav-link" asp-area="Admin" asp-controller="Roles" asp-action="Index">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-user-tag"></i></div>
+                                        Roles
+                                    </a> *@
+
+                                </nav>
+                            </div>
+
+                            <!-- Ventas y Facturación (como dropdown) -->
+                            <div class="sb-sidenav-menu-heading">Ventas</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseVentas" aria-expanded="false" aria-controls="collapseVentas">
+                                <div class="sb-nav-link-icon"><i class="fas fa-shopping-cart"></i></div>
+                                Gestión de Ventas
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseVentas" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" asp-area="Venta" asp-controller="Ventas" asp-action="Index">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-cart-plus"></i></div>
+                                    Nueva Venta
+                                </a>
+                                <a class="nav-link" asp-area="Venta" asp-controller="Clientes" asp-action="Index">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-user-friends"></i></div>
+                                    Clientes
+                                </a>
+                                   
+                                <a class="nav-link" asp-area="Venta" asp-controller="MetodosPago" asp-action="Index">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-credit-card"></i></div>
+                                    Métodos de Pago
+                                </a>
+                                <a class="nav-link" asp-area="Venta" asp-controller="facturas" asp-action="Index">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-list-alt"></i></div>
+                                    Historial de Ventas
+                                </a>
+                                @* <a class="nav-link" asp-area="Admin" asp-controller="Facturas" asp-action="Index">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                                    Facturas
+                                </a> *@
+                                    
+                                    
+                                    
+                                </nav>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </nav>
+
+            </div>
+
+        
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container mt-3">
+                    @if (TempData["Success"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <i class="fas fa-check-circle me-2"></i>
+                            @TempData["Success"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="fas fa-exclamation-circle me-2"></i>
+                            @TempData["Error"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+                </div>
+                <div class="container-fluid px-4">
+                    @RenderBody()
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Your Website @DateTime.Now.Year</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+    <!--Js plugins-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.serializeJSON/3.2.1/jquery.serializejson.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.5/sweetalert2.min.js"></script>
+    <script src="~/js/scripts.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

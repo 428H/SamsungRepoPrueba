@@ -1,0 +1,35 @@
+﻿@page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access denied";
+}
+
+<div class="container">
+    <div class="row min-vh-100 align-items-center justify-content-center">
+        <div class="col-md-6 text-center">
+            
+            <img src="https://image.freepik.com/free-vector/403-error-forbidden-with-police-concept-illustration_114360-1884.jpg" 
+                 alt="403 Error" 
+                 class="img-fluid mb-4" 
+                 style="max-width: 200px;">
+            
+            
+            <h1 class="display-4 fw-bold text-danger">403</h1>
+            <h2 class="mb-3">Acceso Denegado</h2>
+            <p class="lead mb-4">
+                No tienes permiso para acceder a esta página.
+            </p>
+            
+            
+            <div class="d-grid gap-2 d-md-block">
+                <button onclick="history.back()" class="btn btn-secondary btn-lg me-md-2">
+                    ← Volver
+                </button>
+                <a href="/" class="btn btn-outline-dark btn-lg">
+                    Ir al Inicio
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,334 @@
+﻿@model Sistema.Models.ViewModels.ProductoVM
+@using Sistema.Models
+@* @inject Microsoft.AspNetCore.Identity.UserManager<Microsoft.AspNetCore.Identity.IdentityUser> UserManager *@
+@inject Microsoft.AspNetCore.Identity.UserManager<Sistema.Models.ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Detalles del Producto";
+    //usuario
+    string nombreUsuario = "No disponible";
+    if (!string.IsNullOrEmpty(Model.Producto.id_usuario))
+    {
+        var usuario = await UserManager.FindByIdAsync(Model.Producto.id_usuario);
+        nombreUsuario = usuario != null ? usuario.UserName : "Usuario no encontrado";
+    }
+}
+
+<div class="container-fluid py-4">
+    <div class="row justify-content-center">
+        <div class="col-xl-10">
+            <div class="card shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="text-center mb-0"><i class="fa-solid fa-eye me-2"></i>Detalles del Producto</h3>
+                </div>
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <!-- Información Básica -->
+                            
+                            <div class="card mb-4">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Información Básica</h5>
+                                </div>
+                                <div class="card-body">
+                                    <!-- Modelo -->
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-light py-2">
+                                            <label class="form-label fw-bold text-dark mb-0">Modelo</label>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <p class="form-control-plaintext mb-0">@Model.Producto.modelo</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Nombre -->
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-light py-2">
+                                            <label class="form-label fw-bold text-dark mb-0">Nombre</label>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <p class="form-control-plaintext mb-0">@Model.Producto.nombre</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Descripción -->
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-light py-2">
+                                            <label class="form-label fw-bold text-dark mb-0">Descripción</label>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <div class="form-control-plaintext mb-0">@Html.Raw(Model.Producto.descripcion)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Especificaciones -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0"><i class="fas fa-cogs me-2"></i>Especificaciones Técnicas</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card mb-3">
+                                                <div class="card-header bg-light py-2">
+                                                    <label class="form-label fw-bold text-dark mb-0">Memoria</label>
+                                                </div>
+                                                <div class="card-body py-2">
+                                                    <input type="text" id="especMemoria" class="form-control-plaintext mb-0" readonly disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card mb-3">
+                                                <div class="card-header bg-light py-2">
+                                                    <label class="form-label fw-bold text-dark mb-0">Cámara</label>
+                                                </div>
+                                                <div class="card-body py-2">
+                                                    <input type="text" id="especCamara" class="form-control-plaintext mb-0" readonly disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card mb-3">
+                                                <div class="card-header bg-light py-2">
+                                                    <label class="form-label fw-bold text-dark mb-0">Pantalla</label>
+                                                </div>
+                                                <div class="card-body py-2">
+                                                    <input type="text" id="especPantalla" class="form-control-plaintext mb-0" readonly disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card mb-3">
+                                                <div class="card-header bg-light py-2">
+                                                    <label class="form-label fw-bold text-dark mb-0">Color</label>
+                                                </div>
+                                                <div class="card-body py-2">
+                                                    <input type="text" id="especColor" class="form-control-plaintext mb-0" readonly disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" asp-for="Producto.especificaciones" id="especificacionesJson" />
+                                </div>
+                            </div>
+
+                            <!-- Información Comercial -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0"><i class="fas fa-tags me-2"></i>Información Comercial</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card mb-3">
+                                                <div class="card-header bg-light py-2">
+                                                    <label class="form-label fw-bold text-dark mb-0">Precio</label>
+                                                </div>
+                                                <div class="card-body py-2">
+                                                    <p class="form-control-plaintext mb-0">$@Model.Producto.precio</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card mb-3">
+                                                <div class="card-header bg-light py-2">
+                                                    <label class="form-label fw-bold text-dark mb-0">Costo</label>
+                                                </div>
+                                                <div class="card-body py-2">
+                                                    <p class="form-control-plaintext mb-0">$@Model.Producto.costo</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-light py-2">
+                                            <label class="form-label fw-bold text-dark mb-0">Categoría</label>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <p class="form-control-plaintext mb-0">
+                                                @{
+                                                    var categoriaReal = Model.Producto.Categoria?.nombre;
+                                                    @(categoriaReal ?? "No especificada")
+                                                }
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Presentación y Estado -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0"><i class="fas fa-image me-2"></i>Presentación y Estado</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-light py-2">
+                                            <label class="form-label fw-bold text-dark mb-0">Estado</label>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <p class="form-control-plaintext mb-0">
+                                                @if (Model.Producto.estado?.ToLower() == "activo")
+                                                {
+                                                    <span class="badge bg-success">Activo</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-secondary">Inactivo</span>
+                                                }
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-light py-2">
+                                            <label class="form-label fw-bold text-dark mb-0">Fecha de Creación</label>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <p class="form-control-plaintext mb-0">@Model.Producto.fecha_creacion</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Botones de acción -->
+                            <div class="d-flex justify-content-between mt-4">
+                                <a asp-action="Index" class="btn btn-secondary">
+                                    <i class="fa-solid fa-arrow-left me-1"></i> Volver
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@Model.Producto.id_producto" class="btn btn-dark">
+                                    <i class="fa-solid fa-edit me-1"></i> Editar Producto
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Panel lateral con la imagen actual e información -->
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0"><i class="fas fa-image me-2"></i>Imagen del Producto</h5>
+                                </div>
+                                <div class="card-body text-center">
+                                    @if (!string.IsNullOrEmpty(Model.Producto.ruta_imagen))
+                                    {
+                                        <img src="/@Model.Producto.ruta_imagen" class="img-fluid rounded mb-3" style="max-height: 300px; border: 1px solid #dee2e6;" />
+                                        
+                                    }
+                                    else
+                                    {
+                                        <div class="p-5 bg-light rounded mb-3 d-flex align-items-center justify-content-center" style="height: 200px;">
+                                            <div class="text-center text-muted">
+                                                <i class="fas fa-image fa-4x mb-3"></i>
+                                                <p>No hay imagen disponible</p>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0"><i class="fas fa-boxes me-2"></i>Información de Inventario</h5>
+                                </div>
+                                <div class="card-body">
+                                    @if (Model.InventarioActual != null && Model.InventarioActual.id_inventario > 0)
+                                    {
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <label class="form-label fw-bold">Stock Disponible:</label>
+                                                <span class="@(Model.InventarioActual.cantidad_disponible <= Model.InventarioActual.stock_minimo ? "text-danger fw-bold" : "")">
+                                                    @Model.InventarioActual.cantidad_disponible unidades
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <label class="form-label fw-bold">Stock Mínimo:</label>
+                                                <span>@Model.InventarioActual.stock_minimo unidades</span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <label class="form-label fw-bold">Última Actualización:</label>
+                                                <span class="text-muted">@Model.InventarioActual.ultima_actualizacion</span>
+                                            </div>
+                                        </div>
+
+                                        @if (Model.InventarioActual.cantidad_disponible <= 0)
+                                        {
+                                            <div class="alert alert-danger mt-3 py-2">
+                                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                                <strong>Producto Agotado</strong>
+                                            </div>
+                                        }
+                                        else if (Model.InventarioActual.cantidad_disponible <= Model.InventarioActual.stock_minimo)
+                                        {
+                                            <div class="alert alert-warning mt-3 py-2">
+                                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                                <strong>Stock Bajo</strong> - Necesita reabastecimiento
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="alert alert-success mt-3 py-2">
+                                                <i class="fas fa-check-circle me-2"></i>
+                                                <strong>Stock Suficiente</strong>
+                                            </div>
+                                        }
+
+                                        <a asp-action="AgregarProducto" asp-route-id="@Model.Producto.id_producto" class="btn btn-info btn-sm w-100 mt-2">
+                                            <i class="fas fa-plus-circle me-1"></i> Gestionar Stock
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <div class="text-center p-3">
+                                            <i class="fas fa-exclamation-circle fa-3x text-muted mb-3"></i>
+                                            <p>No hay información de inventario para este producto.</p>
+                                            <a asp-action="AgregarProducto" asp-route-id="@Model.Producto.id_producto" class="btn btn-info btn-sm w-100 mt-2">
+                                                <i class="fas fa-plus-circle me-1"></i> Gestionar Stock
+                                            </a>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+
+                            <!-- Información Adicional -->
+                            <div class="card">
+                                <div class="card-header bg-light">
+                                    <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Información Adicional</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold"><i class="fas fa-id-card text-dark me-2"></i>ID del Producto</h6>
+                                        <p class="ms-4 mb-3">@Model.Producto.id_producto</p>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold"><i class="fas fa-user text-dark me-2"></i>ID de Usuario</h6>
+                                        <p class="ms-4 mb-3">@nombreUsuario</p>
+                                    </div>
+
+                                    <div class="alert alert-info small">
+                                        <i class="fas fa-lightbulb me-2"></i>
+                                        Puede consultar más detalles en los registros del sistema.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/productoEspecificacione.js"></script>
+
+}

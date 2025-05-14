@@ -1,0 +1,43 @@
+﻿@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout != null)
+    {
+        Layout = parentLayout.ToString();
+    }
+    else
+    {
+        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    }
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-11">
+            <div class="card shadow-sm">
+                <div class="card-header bg-gradient text-white" style="background-color: #212529;">
+                    <h3 class="text-center mb-0">
+                        <i class="fa-solid fa-user-shield me-2"></i>Gestiona tu cuenta
+                    </h3>
+                </div>
+                <div class="card-body p-4">
+                    <div class="mb-3">
+                        <h4 class="mb-2"><i class="fa-solid fa-cog me-2"></i>Cambia la configuración de tu cuenta</h4>
+                        <hr />
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <partial name="_ManageNav" />
+                        </div>
+                        <div class="col-md-9">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}

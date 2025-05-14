@@ -1,0 +1,90 @@
+﻿@model Sistema.Models.MetodosPago
+@{
+    ViewData["Title"] = "Crear Método de Pago";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="text-center mb-0"><i class="fa-solid fa-credit-card me-2"></i>Crear Nuevo Método de Pago</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form method="post" asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="mb-4">
+                                    <label asp-for="Nombre" class="form-label fw-bold">Nombre</label>
+                                    <input asp-for="Nombre" class="form-control" placeholder="Ingrese el nombre del método de pago" />
+                                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label asp-for="Descripcion" class="form-label fw-bold">Descripción</label>
+                                    <textarea asp-for="Descripcion" class="form-control" style="height: 250px;"></textarea>
+                                    <span asp-validation-for="Descripcion" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label asp-for="Estado" class="form-label fw-bold">Estado</label>
+                                    <select asp-for="Estado" class="form-select">
+                                        <option value="Activo">Activo</option>
+                                        <option value="Inactivo">Inactivo</option>
+                                    </select>
+                                    <span asp-validation-for="Estado" class="text-danger"></span>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-4">
+                                    <partial name="_VistaCrearVolver" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card h-100 bg-light">
+                                    <div class="card-body">
+                                        <h5 class="card-title border-bottom pb-2">
+                                            <i class="fas fa-info-circle text-dark me-2"></i>Consejos útiles
+                                        </h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-dark me-2"></i>
+                                                Use nombres claros y descriptivos para el método
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-dark me-2"></i>
+                                                Incluya detalles sobre cómo funciona este método
+                                            </li>
+                                            
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-dark me-2"></i>
+                                                Considere incluir información sobre tiempos de procesamiento
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.8.3/tinymce.min.js"
+            integrity="sha512-VCEWnpOl7PIhbYMcb64pqGZYez41C2uws/M/mDdGPy+vtEJHd9BqbShE4/VNnnZdr7YCPOjd+CBmYca/7WWWCw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'lists',
+            menubar: 'file edit format',
+            toolbar: 'undo redo | bold italic | bullist numlist',
+            height: 250
+        });
+    </script>
+}

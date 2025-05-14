@@ -1,0 +1,15 @@
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\bin\Debug\net8.0\Sistema.Utilidades.deps.json
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\bin\Debug\net8.0\Sistema.Utilidades.dll
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\bin\Debug\net8.0\Sistema.Utilidades.pdb
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\obj\Debug\net8.0\Sistema.Utilidades.GeneratedMSBuildEditorConfig.editorconfig
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\obj\Debug\net8.0\Sistema.Utilidades.AssemblyInfoInputs.cache
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\obj\Debug\net8.0\Sistema.Utilidades.AssemblyInfo.cs
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\obj\Debug\net8.0\Sistema.Utilidades.csproj.CoreCompileInputs.cache
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\obj\Debug\net8.0\Sistema.Utilidades.dll
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\obj\Debug\net8.0\refint\Sistema.Utilidades.dll
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\obj\Debug\net8.0\Sistema.Utilidades.pdb
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\obj\Debug\net8.0\ref\Sistema.Utilidades.dll
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\bin\Debug\net8.0\Sistema.Models.dll
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\bin\Debug\net8.0\Sistema.Models.pdb
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\obj\Debug\net8.0\Sistema.Utilidades.csproj.AssemblyReference.cache
+D:\DIEGO_2\Escritorio\VISUALPRO\ciclo I 2025\SamsungV1\Sistema.Utilidades\obj\Debug\net8.0\Sistema..71037685.Up2Date

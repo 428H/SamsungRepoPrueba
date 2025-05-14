@@ -1,0 +1,68 @@
+﻿@model dynamic
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Factura #@Model.Numero</title>
+    <link href="~/css/facturaPDF.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+        <h1>FACTURA</h1>
+        <p>Samsung Store</p>
+    </div>
+
+    <div class="info">
+        <div class="info-row">
+            <span class="info-label">Número de Factura:</span>
+            <span>@Model.Numero</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Fecha:</span>
+            <span>@Model.FechaEmision</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Cliente:</span>
+            <span>@Model.Cliente</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Vendedor:</span>
+            <span>@Model.Usuario</span>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var detalle in Model.Detalles)
+            {
+                <tr>
+                    <td>@detalle.Producto</td>
+                    <td>@detalle.Cantidad</td>
+                    <td>$@string.Format("{0:0.00}", detalle.PrecioUnitario)</td>
+                    <td>$@string.Format("{0:0.00}", detalle.Subtotal)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="total">
+        <p>Total: $@string.Format("{0:0.00}", Model.Total)</p>
+    </div>
+
+    <div class="footer">
+        <p>Gracias por su compra</p>
+        <p>Samsung Store • info@samsungstore.com • (503) 2222-3333</p>
+    </div>
+</body>
+</html>
