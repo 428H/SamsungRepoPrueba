@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DIEGO_2\\Videos\\github\\SamsungRepoPrueba\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F5148581-07D4-4F21-B7B4-20B5EAC8F6FB}|SamsungV1\\SamsungV1.csproj|d:\\diego_2\\videos\\github\\samsungrepoprueba\\samsungv1\\areas\\inicio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F5148581-07D4-4F21-B7B4-20B5EAC8F6FB}|SamsungV1\\SamsungV1.csproj|solutionrelative:samsungv1\\areas\\inicio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,19 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DIEGO_2\\Videos\\github\\SamsungRepoPrueba\\SamsungV1\\Areas\\Inicio\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "SamsungV1\\Areas\\Inicio\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\DIEGO_2\\Videos\\github\\SamsungRepoPrueba\\SamsungV1\\Areas\\Inicio\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "SamsungV1\\Areas\\Inicio\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-14T04:52:02.32Z",
-              "EditorCaption": ""
             }
           ]
         },
